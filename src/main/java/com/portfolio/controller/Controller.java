@@ -18,4 +18,9 @@ public class Controller {
 		return principal;
 	}
 	
+	@GetMapping("/res")
+	public String res() {
+		return "Hello";
+	}
+	
 }

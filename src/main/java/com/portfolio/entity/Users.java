@@ -1,6 +1,7 @@
 package com.portfolio.entity;
 
 public class Users {
+	private int uId;
 	private String name;
 	private String email;
 
@@ -8,10 +9,19 @@ public class Users {
 
 	}
 
-	public Users(String name, String email) {
+	public Users(int uId, String name, String email) {
 		super();
+		this.uId = uId;
 		this.name = name;
 		this.email = email;
+	}
+
+	public int getuId() {
+		return uId;
+	}
+
+	public void setuId(int uId) {
+		this.uId = uId;
 	}
 
 	public String getName() {
@@ -32,7 +42,7 @@ public class Users {
 
 	@Override
 	public String toString() {
-		return "Users [name=" + name + ", email=" + email + "]";
+		return "Users [uId=" + uId + ", name=" + name + ", email=" + email + "]";
 	}
 
 }
