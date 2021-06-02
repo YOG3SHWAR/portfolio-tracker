@@ -2,8 +2,9 @@ create database portfolio_tracker;
 use portfolio_tracker;
 
 create table users (
+	u_id int primary key not null auto_increment,
     name varchar(255),
-    email varchar(255) primary key not null
+    email varchar(255) unique key
 );
 
 create table transictions (
