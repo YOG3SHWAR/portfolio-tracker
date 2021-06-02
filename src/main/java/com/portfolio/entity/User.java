@@ -1,15 +1,15 @@
 package com.portfolio.entity;
 
-public class Users {
+public class User {
 	private int uId;
 	private String name;
 	private String email;
 
-	Users() {
+	public User() {
 
 	}
 
-	public Users(int uId, String name, String email) {
+	public User(int uId, String name, String email) {
 		super();
 		this.uId = uId;
 		this.name = name;

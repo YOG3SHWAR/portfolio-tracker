@@ -2,23 +2,23 @@ package com.portfolio.entity;
 
 import java.time.LocalDateTime;
 
-public class Transictions {
+public class Transiction {
 	private int tId;
 	private String email;
 	private LocalDateTime dateTime;
 	private double receivedQty;
 	private String receivedCurrency;
 	private double sendQty;
-	private String sendCrrency;
+	private String sendCurrency;
 	private double feeAmount;
 	private String feeCurrency;
 	private String remarks;
 
-	public Transictions() {
+	public Transiction() {
 
 	}
 
-	public Transictions(int tId, String email, LocalDateTime dateTime, double receivedQty, String receivedCurrency,
+	public Transiction(int tId, String email, LocalDateTime dateTime, double receivedQty, String receivedCurrency,
 			double sendQty, String sendCrrency, double feeAmount, String feeCurrency, String remarks) {
 		super();
 		this.tId = tId;
@@ -27,7 +27,7 @@ public class Transictions {
 		this.receivedQty = receivedQty;
 		this.receivedCurrency = receivedCurrency;
 		this.sendQty = sendQty;
-		this.sendCrrency = sendCrrency;
+		this.sendCurrency = sendCrrency;
 		this.feeAmount = feeAmount;
 		this.feeCurrency = feeCurrency;
 		this.remarks = remarks;
@@ -81,12 +81,12 @@ public class Transictions {
 		this.sendQty = sendQty;
 	}
 
-	public String getSendCrrency() {
-		return sendCrrency;
+	public String getSendCurrency() {
+		return sendCurrency;
 	}
 
-	public void setSendCrrency(String sendCrrency) {
-		this.sendCrrency = sendCrrency;
+	public void setSendCurrency(String sendCrrency) {
+		this.sendCurrency = sendCrrency;
 	}
 
 	public double getFeeAmount() {
@@ -117,7 +117,7 @@ public class Transictions {
 	public String toString() {
 		return "Transictions [tId=" + tId + ", email=" + email + ", dateTime=" + dateTime + ", receivedQty="
 				+ receivedQty + ", receivedCurrency=" + receivedCurrency + ", sendQty=" + sendQty + ", sendCrrency="
-				+ sendCrrency + ", feeAmount=" + feeAmount + ", feeCurrency=" + feeCurrency + ", remarks=" + remarks
+				+ sendCurrency + ", feeAmount=" + feeAmount + ", feeCurrency=" + feeCurrency + ", remarks=" + remarks
 				+ "]";
 	}
 

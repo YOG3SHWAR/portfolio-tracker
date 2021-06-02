@@ -1,5 +1,8 @@
 package com.portfolio.interfaces;
 
-public interface IUserDao {
+import com.portfolio.entity.User;
 
+public interface IUserDao {
+	public boolean addUser(User user);
+	public User getUser(String eamil);
 }

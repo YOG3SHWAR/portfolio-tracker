@@ -29,13 +29,4 @@ public class GetConnection {
 
 	}
 
-	public static PreparedStatement getPreparedStatement(String sqlString) {
-		try {
-			return getMySQLConn().prepareStatement(sqlString);
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-		return null;
-	}
-
 }
