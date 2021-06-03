@@ -35,5 +35,7 @@ public class App {
 		System.out.println(userDAO.addUser(user));
 		System.out.println(userDAO.getUser("kanhay8@gmail.com"));		
 		System.out.println(dao.addTransiction(transiction));
+		System.out.println(dao.getAllTransiction("kanhay8@gmail.com"));
+//		System.out.println(dao.deleteTransiction(6));
 	}
 }
